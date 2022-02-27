@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/122f44799a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <h1>MÉTÉO API</h1>
+        <div class="input-container">
+            <input id="searchVille" type="text" placeholder="Ville recherchée...">
+            <input type="button" value="Rechercher" onclick="recherche()">
+        </div>
+    </header>
+    <main>
+        <div class="cards-container">
+            <div class="image-bck">
+                <div class="opacity-color">
+                    <div class="h2-container">
+                        <h2 id="villeActuelle">TOURS</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <div id="icon">TG</div>
+                    <p id="tDescription">temp dégagé</p>
+                </div>
+            </div>
+            <div class="infos-container">
+                <div class="item">
+                    <p id="degres">25°C</p>
+                    <i class="fas fa-temperature-low"></i>
+                </div>
+                <div class="item">
+                    <p id="humidity">65%</p>
+                    <i class="fas fa-tint"></i>
+                </div>
+                <div class="item">
+                    <p id="wind">32km/h</p>
+                    <i class="fas fa-wind"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
